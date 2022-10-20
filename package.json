@@ -55,6 +55,6 @@
     "@emotion/styled": "^11.10.4",
     "@mui/icons-material": "^5.10.6",
     "@mui/material": "^5.10.6",
-    "consolid-shell": "file:../consolid-shell/dist/emulator/consolid-shell-1.0.1.tgz"
+    "consolid-shell": "file:../../shell/dist/emulator/consolid-shell-1.0.1.tgz"
   }
 }

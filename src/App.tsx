@@ -2,10 +2,9 @@ import * as React from 'react'
 import { PiletApi } from 'consolid-shell'
 import { Drawer, CssBaseline, Divider, SvgIcon } from "@mui/material"
 
-const App = ({ piral }: { piral: PiletApi }) => {
-    const mod = piral.meta
-    const children = mod["modules"].map(item => item.link) || []
-    const [activePlugin, setActivePlugin] = React.useState(children.length && children[0])
+const App = ({ piral }: { piral: PiletApi }) => { 
+    const children = piral.getChildModules(piral)
+    const [activePlugin, setActivePlugin] = React.useState(children.length && children[0].link)
 
     return (
         <div>
@@ -24,7 +23,7 @@ const App = ({ piral }: { piral: PiletApi }) => {
                             },
                         }}
                         anchor="left" variant="permanent">
-                        {mod["modules"].map((child) => {
+                        {children.map((child) => {
                             return (
                                 <div key={child.link}>
 
