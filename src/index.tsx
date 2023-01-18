@@ -15,5 +15,5 @@ export function setup(app: PiletApi) {
     initialRows: app.meta["initialRows"],
     resizable: true
   })
-}
+} 
 
