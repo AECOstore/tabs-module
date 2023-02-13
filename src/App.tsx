@@ -7,7 +7,7 @@ const App = ({ piral }: { piral: PiletApi }) => {
     const [activePlugin, setActivePlugin] = React.useState(children.length && children[0].link)
 
     return (
-        <div>
+        <div> 
             {activePlugin ? (
                 <div>
                     <div style={{ marginLeft: 75 }}>
