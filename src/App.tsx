@@ -7,10 +7,10 @@ const App = ({ piral }: { piral: PiletApi }) => {
     const [activePlugin, setActivePlugin] = React.useState(children.length && children[0].link)
 
     return (
-        <div> 
+        <div style={{position: "relative", height: "800px", marginLeft: -10, marginTop: -10}}> 
             {activePlugin ? (
                 <div>
-                    <div style={{ marginLeft: 75 }}>
+                    <div style={{ marginLeft: 60 }}>
                         <piral.Extension name={`${activePlugin}`} />
                     </div>
                     <Drawer
@@ -22,7 +22,9 @@ const App = ({ piral }: { piral: PiletApi }) => {
                                 position: 'absolute'
                             },
                         }}
-                        anchor="left" variant="permanent">
+                        anchor="left"
+                        variant="permanent"
+                        >
                         {children.map((child) => {
                             return (
                                 <div key={child.link}>
