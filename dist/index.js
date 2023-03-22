@@ -15681,7 +15681,6 @@ __webpack_require__.r(__webpack_exports__);
 
 function setup(app) {
   var constants = app.getData("CONSTANTS");
-  console.log('app.meta tabs', app.meta);
   var connect = app.makeState(app, constants);
   var Module = connect(function (_ref) {
     var state = _ref.state,
