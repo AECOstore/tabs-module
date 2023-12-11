@@ -4,7 +4,6 @@ import App from './App'
 
 export function setup(app: PiletApi) {
   const constants = app.getData("CONSTANTS")
-  console.log('app.meta tabs', app.meta)
   const connect = app.makeState(app, constants)
   const Module = connect(({ state, actions }) => app.withState(App, { app, state, actions }))
   app.showNotification(`Loaded ${app.meta.name} component!`, {
