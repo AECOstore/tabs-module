@@ -2,7 +2,7 @@
 A module for hosting extension modules in a tab-like fashion.
 
 # Mifesto: Tabs Module
-This is a micro-frontend "organisational" module that allows to host other micro-frontend modules in a tab-like fashion. the module does not expose any GUI of its own, but only provides a framework for other modules to render into. The below image shows a Tabs Component that hosts a [Query Module](https://github.com/AECOstore/query-module) and a [Damage Module](https://github.com/AECOstore/damage-module). 
+This is a micro-frontend "organisational" module that allows to host other micro-frontend modules in a tab-like fashion. the module does not expose any GUI of its own, but only provides a framework for other modules to render into. The below image shows a Tabs Component that hosts a [Query Module](https://github.com/AECOstore/query-module) and a [Damage Module](https://github.com/AECOstore/damage-module). Modules may expose an icon that allows the Tabs Module to visualise them in a lint. 
 
 ![Tabs module UI](public/module.png)
 
